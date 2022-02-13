@@ -28,16 +28,6 @@ Open the sendgrid.xml configuration file and insert configuration parameters fro
 </Config>
 ```
 
-### Parameter Definitions
-
-| Parameter | Description                    |
-| --------- | ------------------------------ |
-| Token     | Your SendGrid API key.         |
-| From      | The email "from" address.      |
-| FromName  | The email "from" display name. |
-| To        | The email "to" address.        |
-| ToName    | The email "to" display name.   |
-
 ## 3. Run
 
 Launch PowerShell and navigate to the root folder where you downloaded this utility. For example, if you downloaded the project to "C:\temp\webup", run:

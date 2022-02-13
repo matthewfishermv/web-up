@@ -1,7 +1,7 @@
 <Config>
-  <Token></Token>
-  <From></From>
-  <FromName></FromName>
-  <To></To>
-  <ToName></ToName>
+  <Token></Token><!-- Your SendGrid API key. -->
+  <From></From><!-- The email "from" address. -->
+  <FromName></FromName><!-- The email "from" display name. -->
+  <To></To><!-- The email "to" address. -->
+  <ToName></ToName><!-- The email "to" display name. -->
 </Config>
