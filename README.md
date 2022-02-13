@@ -46,8 +46,21 @@ Launch PowerShell and navigate to the root folder where you downloaded this util
 Set-Location C:\temp\webup
 ```
 
-Start the utility:
+Start the utility, supplying the necessary input parameters:
 
 ```
-.\Start.ps1
+.\Start.ps1 -UtilityPath C:\temp\webup -SiteName "My Site" -Url "https://matthewfishermv.com"
 ```
+
+# Run the utility on a schedule
+
+You can use Windows Task Scheduler to run the uptime check on a schedule:
+
+1. Open Task Scheduler and create a new task.
+2. In the General tab, select the user who will run the scheduled task.
+3. In the Triggers tab, configure one or more schedules for the task.
+4. In the Actions tab, click 'New...' and supply the following parameters (replace the example values):
+   1. **Action**: Start a program
+   2. **Program/script**: powershell.exe
+   3. **Add arguments (optional)**: -File "C:\temp\webup" -UtilityPath "C:\temp\webup" -SiteName "My Site" -Url "https://matthewfishermv.com"
+5. Click 'OK', then 'OK' again.
